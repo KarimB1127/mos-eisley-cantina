@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina · Tatooine's busiest watering hole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-slate-950 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-950/40 via-slate-950 to-slate-950 text-slate-100 antialiased"
+  >
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-white/5"
+    >
+      <nav
+        aria-label="Primary"
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div
+            class="h-8 w-8 rounded-lg bg-violet-600/30 border border-violet-500/30 flex items-center justify-center font-bold text-violet-300 text-sm"
+          >
+            M
+          </div>
+          <span class="font-bold tracking-wide text-sm"
+            >Mos Eisley Cantina</span
+          >
+        </div>
+
+        <!-- Links -->
+        <div
+          class="hidden md:flex items-center gap-8 text-xs font-medium text-slate-300"
+        >
+          <a href="#features" class="hover:text-white transition-colors"
+            >Features</a
+          >
+          <a href="#pricing" class="hover:text-white transition-colors"
+            >Pricing</a
+          >
+          <a href="#music" class="hover:text-white transition-colors"
+            >Live music</a
+          >
+          <a href="#signin" class="hover:text-white transition-colors"
+            >Sign in</a
+          >
+        </div>
+
+        <!-- CTA -->
+        <a
+          href="#reserve"
+          class="px-4 py-2 text-xs font-semibold rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors flex items-center gap-1"
+        >
+          Reserve a booth &rarr;
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+      <!-- Hero -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Left Column -->
+        <div class="space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 text-[11px] font-medium rounded-full bg-violet-900/30 text-violet-300 border border-violet-500/20"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-violet-400"></span>
+            Open every night, 3 ABY
+          </div>
+
+          <h1
+            class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-none"
+          >
+            Find your watering hole on
+            <span
+              class="bg-gradient-to-r from-violet-400 via-violet-300 to-amber-300 bg-clip-text text-transparent"
+              >Tatooine</span
+            >
+          </h1>
+
+          <p class="text-sm text-slate-400 max-w-lg leading-relaxed">
+            Live music every night, smugglers welcome in the back booths, and
+            droids: please check the house policy at the door.
+          </p>
+
+          <div class="flex items-center gap-4 pt-2">
+            <a
+              href="#reserve"
+              class="px-5 py-2.5 text-xs font-semibold rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors"
+            >
+              Reserve a booth
+            </a>
+            <a
+              href="#music"
+              class="px-5 py-2.5 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-colors"
+            >
+              See live music
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div
+            class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-md"
+          >
+            <div>
+              <p class="text-xs text-slate-400">Booths</p>
+              <p class="text-xl font-bold text-white mt-1">48</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400">Live bands</p>
+              <p class="text-xl font-bold text-white mt-1">7 / week</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400">Open since</p>
+              <p class="text-xl font-bold text-white mt-1">5 BBY</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <figure
+          class="relative rounded-3xl overflow-hidden ring-1 ring-white/10 bg-slate-900 shadow-2xl"
+        >
+          <img
+            src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg"
+            alt="Mos Eisley Cantina interior"
+            class="w-full h-[540px] object-cover"
+          />
+          <figcaption
+            class="p-4 bg-slate-950/90 border-t border-white/10 flex items-center justify-between"
+          >
+            <div>
+              <p class="text-xs font-semibold text-white">
+                Tonight at the Cantina
+              </p>
+              <p class="text-[11px] text-slate-400">
+                Figrin D'an & the Modal Nodes
+              </p>
+            </div>
+            <span
+              class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20"
+            >
+              <span
+                class="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse"
+              ></span>
+              Live
+            </span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Features Section -->
+      <section
+        id="features"
+        aria-labelledby="features-title"
+        class="mx-auto max-w-6xl px-6 py-20"
+      >
+        <h2 id="features-title" class="sr-only">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div
+              class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-violet-400 mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 19V6a2 2 0 0 1 1.618-1.969l6-1.5A2 2 0 0 1 19 4.5v11.192A2.99 2.99 0 0 0 17 15a3 3 0 1 0 3 3V7"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-white text-lg mb-2">
+              Live music nightly
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Sunset to sunrise, loud enough to drown out a bounty hunter.
+            </p>
+          </article>
+          <!-- Card 2 -->
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div
+              class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-violet-400 mb-4"
+            >
+              <span class="text-2xl">🪐</span>
+            </div>
+            <h3 class="font-semibold text-white text-lg mb-2">
+              Smugglers welcome
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              No questions asked. Back booths, no records kept.
+            </p>
+          </article>
+          <!-- Card 3 -->
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div
+              class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-violet-400 mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="7"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                />
+                <rect
+                  x="8.5"
+                  y="11"
+                  width="7"
+                  height="2"
+                  rx="1"
+                  fill="currentColor"
+                />
+                <circle cx="9.5" cy="9.5" r="1" fill="currentColor" />
+                <circle cx="14.5" cy="9.5" r="1" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-white text-lg mb-2">
+              Droids: see house policy
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Limits on the floor. Power-down recommended.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pricing Section (AJOUTÉ ICI) -->
+      <section
+        id="pricing"
+        class="mx-auto max-w-6xl px-6 py-20 border-t border-white/10"
+      >
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <h2 class="text-3xl font-extrabold text-white">Reserve Your Space</h2>
+          <p class="text-sm text-slate-400">
+            Choose the booth level that fits your crew and your level of
+            discretion.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <!-- Tier 1: Outer Rim -->
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white">Outer Rim</h3>
+              <p class="text-xs text-slate-400 mt-1">
+                Walk-in only, bar stool seating, house blue milk.
+              </p>
+              <div class="my-6">
+                <span class="text-3xl font-extrabold text-white">0</span>
+                <span class="text-xs text-slate-400"> credits</span>
+              </div>
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> First-come,
+                  first-served
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Standing room at the
+                  main bar
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Complimentary blue milk
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#reserve"
+              class="mt-8 block text-center px-4 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-colors"
+            >
+              Claim a stool
+            </a>
+          </article>
+
+          <!-- Tier 2: Mid Rim (Recommended) -->
+          <article
+            class="relative bg-white/[0.05] border border-violet-500/50 ring-2 ring-violet-500 backdrop-blur rounded-2xl p-6 flex flex-col justify-between shadow-lg shadow-violet-950/50"
+          >
+            <span
+              class="absolute -top-3 right-6 px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase bg-violet-600 text-white"
+            >
+              Recommended
+            </span>
+            <div>
+              <h3 class="text-lg font-bold text-white">Mid Rim</h3>
+              <p class="text-xs text-slate-400 mt-1">
+                Reserved booth, live music nights, smuggler-friendly back row.
+              </p>
+              <div class="my-6">
+                <span class="text-3xl font-extrabold text-white">25</span>
+                <span class="text-xs text-slate-400"> credits / night</span>
+              </div>
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Guaranteed private
+                  booth
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Prime stage acoustics
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Unmonitored exits
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#reserve"
+              class="mt-8 block text-center px-4 py-2 text-xs font-semibold rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors"
+            >
+              Book Mid Rim
+            </a>
+          </article>
+
+          <!-- Tier 3: Core Worlds -->
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white">Core Worlds</h3>
+              <p class="text-xs text-slate-400 mt-1">
+                Private VIP table, Jedi-grade service, bodyguard droid on call.
+              </p>
+              <div class="my-6">
+                <span class="text-3xl font-extrabold text-white">120</span>
+                <span class="text-xs text-slate-400"> credits / night</span>
+              </div>
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Isolated VIP curtain
+                  area
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Dedicated server &
+                  security droid
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Top-shelf Corellian
+                  spirits
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#reserve"
+              class="mt-8 block text-center px-4 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-colors"
+            >
+              Reserve VIP
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (AJOUTÉ ICI) -->
+    <footer class="border-t border-white/10 bg-slate-950/80 backdrop-blur">
+      <div
+        class="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <!-- Brand & Copyright -->
+        <div class="flex items-center gap-3">
+          <div
+            class="h-6 w-6 rounded-md bg-violet-600/30 border border-violet-500/30 flex items-center justify-center font-bold text-violet-300 text-xs"
+          >
+            M
+          </div>
+          <p class="text-xs text-slate-400">
+            © 3 ABY Mos Eisley Cantina. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <nav
+          aria-label="Footer"
+          class="flex items-center gap-6 text-xs text-slate-400"
+        >
+          <a href="#privacy" class="hover:text-white transition-colors"
+            >Privacy</a
+          >
+          <a href="#terms" class="hover:text-white transition-colors">Terms</a>
+          <a href="#contact" class="hover:text-white transition-colors"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
