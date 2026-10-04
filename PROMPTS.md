@@ -1,3 +1,7 @@
+* Commit 1 : "Rends ce nav fixe en haut de page avec Tailwind utilities (sticky top-0, z-50, shadow-md). Ne touche à aucun autre élément, pas de JavaScript."
+
+Ajoute la classe scroll-smooth sur la balise html. Ensuite, dans le nav, relie les liens  aux sections #menu et #live-music avec des attributs href. Uniquement du HTML et Tailwind, aucun JavaScript.
+
 Generate a features grid section inside this selected element:
 
 Stack: HTML + Tailwind Play CDN only.
