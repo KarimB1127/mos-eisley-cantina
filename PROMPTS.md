@@ -1,3 +1,5 @@
+* Commit 1 : "Rends ce nav fixe en haut de page avec Tailwind utilities (sticky top-0, z-50, shadow-md). Ne touche à aucun autre élément, pas de JavaScript."
+
 Generate a features grid section inside this selected element:
 
 Stack: HTML + Tailwind Play CDN only.
